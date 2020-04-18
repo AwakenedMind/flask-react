@@ -3,7 +3,6 @@ from ..repository.mongo import MongoRepository
 from .schema import KudoSchema
 
 class Service(object):
-# Receive user_id & repo_client from MongoRepository Class
  def __init__(self, user_id, repo_client=Repository(adapter=MongoRepository)):
    self.repo_client = repo_client
    self.user_id = user_id
